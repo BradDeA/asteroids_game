@@ -14,11 +14,11 @@ def main():
             if event.type == pygame.QUIT:
                 return
     
+        player.update(dt)
         screen.fill('#000000')
         player.draw(screen)
         pygame.display.flip()
-        miliseconds = clock.tick(60) / 1000
-        dt = miliseconds / 1000
+        dt = clock.tick(60) / 1000
 
 
 
